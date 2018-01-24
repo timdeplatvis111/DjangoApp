@@ -1,0 +1,13 @@
+<!-- templates/signup.html -->
+
+<!--This format is very similar to what we’ve done before. We extend our base template at the top, place our logic between <form></form> tags, use the csrf_token for security, display the form’s content in paragraph tags with form.as_p, and include a submit button. -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Sign up</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Sign up</button>
+</form>
+{% endblock %}
