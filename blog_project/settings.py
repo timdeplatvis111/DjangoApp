@@ -89,9 +89,9 @@ DATABASES = {
         'NAME': 'DjangoBlogApp',
         'USER': 'root',
         'PASSWORD': '',
-        'HOST': 'https://timdeplatvis111.herokuapp.com/',  
-        'PORT': '',
-    }
+        'HOST': 'localhost',  
+        'PORT': '3306',
+    },
 }
 
 # Password validation
