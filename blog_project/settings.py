@@ -34,7 +34,7 @@ SECRET_KEY = '854hffsdufbs1hw18$5^&^%*^Nr%*$^%BR%^bgyynctcyy%$%D%&nnbbinmigfydhe
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['timdeplatvis111.herokuapp.com']
+ALLOWED_HOSTS = ['timdeplatvis111.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -89,8 +89,8 @@ DATABASES = {
         'NAME': 'DjangoBlogApp',
         'USER': 'root',
         'PASSWORD': '',
-        'HOST': 'localhost',  
-        'PORT': '3306',
+        'HOST': 'https://timdeplatvis111.herokuapp.com/',  
+        'PORT': '',
     }
 }
 
