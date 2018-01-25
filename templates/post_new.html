@@ -3,8 +3,12 @@
 
 {% block content %}
     <h1>New post</h1>
+    {% if user.is_authenticated %}
     <form action="" method="post">{% csrf_token %}
       {{ form.as_p }}
       <input type="submit" value="Save" />
     </form>
+    {% else %}
+    <p> Please login first to post a new blog </p>>
+    {% endif %}
 {% endblock %}
